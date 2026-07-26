@@ -1,0 +1,599 @@
+For ticketing system
+
+https://helpdesk.kalyanjewellers.company/agent/#/ticket?roleId=6&state=-1&page=1&sortBy=update-time&order=desc&originated=false&sla=-1&category=-1&type=&stateGroupId=&teamTickets=
+
+new ticketing system
+URL: https://helpdesk.kalyanjewellers.tech
+Email: muziris.softech@kalyanjewellers.tech
+Password: Kalyan@123
+mob no : 9037170483
+
+url& servers
+
+https://docs.google.com/spreadsheets/d/1KcWMEFtL6yy4ICe_MJnv7JekZUxM6mT1x9tnyj88ous/edit#gid=0
+
+Assigned sheet
+
+https://docs.google.com/spreadsheets/d/1otRiCMtepULEG-T5P1tomXQuD2hmtZsMRP-i73Ks7mM/edit?gid=0#gid=0
+
+juelisv live
+
+https://pos.kalyanjewellers.company/juelisv2app/
+
+frnch live
+
+https://posfrch.kalyanjewellers.company/juelisv2app/
+
+------------------------AKT 2025-----------------------------------------------
+
+KJ
+PLAN A: https://pos.kalyanjewellers.company/juelisv2app/
+
+PLAN B: https://posdhb.kalyanjewellers.company/juelisv2app/
+
+FRANCHISE
+PLAN A: https://posfrch.kalyanjewellers.company/juelisv2app/
+
+PLAN B: https://posfrchdhb.kalyanjewellers.company/juelisv2app/
+
+--------------------------------------------------------US SUPPORT--------------------------------
+
+V2 US UAT HOST
+
+https://posd2uat.kalyanjewellers.company/juelisv2app/
+user : 1211
+password : kj@123
+
+
+V2 US LIVE HOST
+
+https://posd2.kalyanjewellers.company/juelisv2app/
+user : 4895
+password : kj@123
+
+
+US LIVE DB
+user name: mz_psqladmin
+Password : Mz@Psql#2028$
+Db host:  kj-az2-prod1-pos-psql-db1.postgres.database.azure.com
+
+
+Ask V1 Status(If not provided by Client) : 10:30 PM
+Transaction Date 
+Board Rate 
+Counter Opening
+
+After getting Status
+Check table data with the current date
+Save Sample token
+
+
+Day End Status(Check in Counter Assist)
+------------------------------------------
+Day End Status
+Bill Sync Status |01/05/2025 | 6:30 AM
+No Pending bills
+
+Bill Count Info
+-----------------------
+CALL abstractbillingstatusproc ('2025-04-27', 30, 'LOCATION_BILL_COUNT', 'rs_results');
+FETCH ALL FROM "rs_results";
+
+
+select * from postransdatesettingsinfo order by transdatetime desc limit 10
+select * from posdayclose order by transdate desc limit 10
+select * from posv2counterclosinginfo order by pvcclosingdate desc limit 10
+select * from cashopeningandclosingdetails order by transdate desc limit 10
+select * from Boardrateinfo   order by rateinfoid desc limit 15
+
+---------------------------------------------new urls----------------------------------------------------------
+Username 1794
+password c1230.
+
+KJ
+https://pos.kalyanjewellers.company/juelisv2app/
+https://posdhb.kalyanjewellers.company/juelisv2app/
+
+Franchise
+https://posfrch.kalyanjewellers.company/juelisv2app/
+https://posfrchdhb.kalyanjewellers.company/juelisv2app/
+
+Secondary
+https://possecondary.kalyanjewellers.company/juelisv2app/
+
+The new domain URL for KJ POS UAT:
+https://posuat.kalyanjewellers.company/juelisv2app/
+
+--------------------------New Live DB Details-INDIA-----------------------------------------------
+
+
+https://kj-az1-prod1-pos-psql-db1.postgres.database.azure.com
+
+UN: muzsupport
+PW: MzSupp0rT2024
+
+http://10.150.64.135/pgadmin4/browser/
+
+username : support@muziris.in
+password : localadmin
+
+---------------------------support UI------------------------------------------------------------------------
+https://posutilityui-us.kalyanjewellers.company/ -> US
+
+https://posutilityui-uk.kalyanjewellers.company/ -> UK
+2015
+JO@2015
+
+ Support Live- US
+https://posutilityd2.kalyanjewellers.company/login   
+user : 4895
+password : kj@123  
+
+ Support Live--India
+https://posutilityui.kalyanjewellers.company
+Username 1794
+password c1230.
+
+
+username 1909
+password kj@123
+
+
+ Utility UAT:  India
+https://possupportuiuat.kalyanjewellers.company 
+Username 1794
+password kj@123
+
+---------------------------------------------------------------------------------------------------------------------------
+
+POS UAT Environment Details:
+V2 UAT  HOST-INDIA--KJ
+ https://posuat.kalyanjewellers.company/juelisv2app/
+Username: 1794
+Password: kj@123
+
+UAT FRCH Environment Details:
+V2 UAT FRCH HOST
+ https://posuatfrch.kalyanjewellers.company/juelisv2app/
+Username: 1794
+Password: kj@123
+
+--------------------------------------------------
+FRCH UAT Host is connected to the new DB.
+DB Name: JuelISPOSV2UAT010126 
+Basic testing is needed on it
+@67194897617106 @113790981009599 
+Host : https://posuatfrch.kalyanjewellers.company/juelisv2app/
+------------------------------------------
+_fvvgCtY9NS7wZ
+---------------------------------------------------------------------------------------------------------------------------------------
+sreehari.ext@kalyanj.onmicrosoft.com
+ Passwd : Sreehari@123
+
+saranya.ext@kalyanj.onmicrosoft.com 
+Saranya@Kalyan@2023
+
+aswin.ext@kalyanj.onmicrosoft.com
+Aswin@456
+
+arathy.ext@kalyanj.onmicrosoft.com 
+Arathypb@Kalyan@2023
+
+aarya.sunil.ext@kalyanj.onmicrosoft.com
+AaryaSunil@123
+
+sreeya.ext@kalyanj.onmicrosoft.com
+Sreeya@123
+
+username - deepak.chandran.ext@kalyanj.onmicrosoft.com
+Password : Muziris@2024
+
+laya.ext@kalyanj.onmicrosoft.com 
+laya@kalyan@2024
+
+vishnu.unni.ext@kalyanj.onmicrosoft.com
+Password: vishnu@123 
+-----------------------------live DB -----------------------------------------------------------------------------------------------------
+
+support@muziris.in	
+localadmin
+
+--------------------UAT DB-----------------------------------------------------------------------------------------------------
+ 10.150.48.70
+ localadmin
+
+-------------LIVE ---------------------------------------------------------------------------------------------------------------------
+ select * from postransdatesettingsinfo where entityhierarchyid = 1431 order by transdatetime desc limit 10;----to know  date setttings on local and uat
+
+select * from PosSupportIntegrationInfo order by supportintegrationid desc  limit 10
+select * from  SupportCategoryDetails order by SupportCategoryid desc limit 10
+select * from transactiontypesupportcategorymapinfo order by transsupmapinfoid desc limit 10
+SELECT * FROM optiondtl where optiondtlid=94
+select * from optiondtl where code ilike '%lOcATIon%'    limit 10--3310
+select * from PosSupportIntegrationInfo WhERE PosSupportIntegrationInfo.supportcategorycode IliKe '%TRADE_DISCOUNT_SETTINGS_MC%' order by supportintegrationid desc   limit 10
+select * from  SupportCategoryDetails where SupportCategoryDetails.supportcategorycode ilike '%TRADE_DISCOUNT_SETTINGS_MC%' order by SupportCategoryid desc limit 10--1065  1061
+select * from transactiontypesupportcategorymapinfo  where supportcategoryid=1061 order by transsupmapinfoid desc limit 10
+
+select * from reportmst order by  reportid desc
+select * from reportparameters order by reportparameters.reportparamid desc
+
+select * from parametermst order by paramid DESC
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+change purchas rate i UAT
+
+SELECT * FROM muzcontrolcodes where  mccid=134
+SELECT * FROM muzcontrolcodes where  muzcontrolcodes.mcccode ilike '%PURCHASE_RATE%'
+SELECT * FROM boardrateinfo where boardrateinfo.ratetypemccid=134 order by transdate desc  limit 10-- 
+ update the  column with same id (a) update these : increment the id +1,  
+b)set transdate and wedate as todays date, 
+c)metaltypemccid 3
+----------------------------------------------------------------------------------- for purity analyser testing data added in uat purityanalyserinfo...........................
+
+SELECT alternatekey, amendrowno, dtlrowno, transgroupid, transgrouprowno, netweight, machinepurity, transdate, tokenno, busientityhierarchyid, busisubentityhierarchyid, productdesc
+FROM public.purityanalyserinfo order by alternatekey desc ;--"100030000016556102"
+
+cahnage  alternatekey+1, machinepurity, transgroupid( from network),tokenno,busientityhierarchyid
+
+----------------------------------Advance amount or weight exceed issue---------------------------------------------------------------------
+select * from SOAREQUESTMANAGEMENTINFO  where SOANO = 'NLRGUOA000145'
+-- update -ve value to 0 in omc if the advance not redeemed
+
+also check v1 and v2
+
+v1 
+select * from saleorderadvance
+where SovAdvanceNo = 'NLRGUOA000145'
+
+select * from SOAdvBefDayClose
+where BavAdvanceNo = 'NLRGUOA000145'
+
+select * from saleorderadvanceredemptiondtl where ArdAdvanceID = 1022127608
+
+select * from SOAdvRedmptnBefDayCloseDtl where BydAdvanceID = 1022127608
+
+
+v2
+ SELECT * FROM transsettledinfo where transno = 'NLRGUOA000145'
+select * from transdtlservice where dtlhdrtransid = 1022127608
+select * from transdtlserviceextendedinfo where dtlhdrtransid = 1022127608
+
+-----------------------------------------------------------------------------------To Enable or Disable purity Analyserflag -----------------------------------------------------
+
+select * from businesslogicruleconfiginfo where busiruleprocesssubflag ilike  'OG_PURITY_ANALYSER%' and busientityhierarchyid=1431
+
+To enable Purity Analyser 
+busiruleprocesssubflag ='OG_PURITY_ANALYSER_ENABLED'
+To disable Purity Analyser 
+busiruleprocesssubflag ='OG_PURITY_ANALYSER_DISABLED'
+
+----------------------------------------------------------------to enable static otp in SOAR--------------------------------------------------------------------------------------------
+select * from entityparametermapinfo where parameterid=47 and entityparametermapinfo.entityhierarchyid=1431 ---make false value to true to enable
+select * from juelisv1andv2busientityhiermapinfo where locationname ilike '%thr%';--1431
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+issue: Detach unused CRM vouchers:
+
+please apply promotion then settle bill . if the voucher is no longer needed then, 1st you have to cancel voucher then settle bill.
+---------------------------------------------------------------------------------------------------------
+
+Select * from pg_tables where tablename ilike '%bkp%'
+select * from entityparametermapinfo where parameterid=86----GV_MAXLIMIT
+select * from juelisv1andv2busientityhiermapinfo where locationname ilike '%thr%';
+select * from juelisv1andv2busientityhiermapinfo where busientityhierid=1502
+SELECT * FROM optiondtl where optiondtlid=577
+select * from stockavailabilityinfo  where simicode= '1370' and busientityhierarchyid= 1935
+
+
+select * from parametermst order by paramid DESC
+
+The advances  which are trying to merge dated  and  . Advance must be merged within 90 days from todays date .
+
+select * from boardrateinfo where busientityhierinfoid= 1654 order by transdate DESC
+
+SELECT * FROM transsettledinfo WHERE transno like '%TEST'
+SELECT * FROM transsettledinfo WHERE hdrtransid=137430000004242102
+SELECT * FROM transsettledinfo WHERE transno ='104300000022322102'
+SELECT * FROM transdtlserviceextendedinfo WHERE  dtlhdrtransid =  104300000019255102 
+SELECT * FROM  transdtlservice WHERE  dtlhdrtransid =  104300000019255102 
+select * from transhdr where hdrtransid=104300000019255102
+select * from transgroupinfo  where transno='USMGSSW00141'
+
+----------------------------------------------------fo deleting unsettled scheme/loyalty from previous date for day close-----------
+select * from transgroupinfo where transno='AJMGUF3004026'
+select * from transhdr where hdrtransid=197390000003175102--set cancelled yn true 
+if it is still facing an issue then go to transgrpinfo and set cancelledyn false then we can load the token in screen and del loyalty directly 
+--------------------------------------------if reprint is not working------------------------------
+
+SELECT * FROM transsettledinfo WHERE transno ='CHIGTOAN2846'
+select * from juelisv1tov2advancesyncinfo where billgroupid=104300000103018102 limit 10
+select * from juelisv1tov2transactionsyncinfo where billgroupid=104300000103018102 limit 10
+-------------------------------------------------------------------------------------------------------------------------
+ TO enable static OTP
+
+select * from parametermst where paramid=47 order by paramid DESC
+select * from juelisv1andv2busientityhiermapinfo  where busientityhierid=1431
+select * from entityparametermapinfo where parameterid=47  and entityhierarchyid=1431 --set false to true
+
+----------------------------------------------------------------Bill save issue - showing transdate not sttled-----------------------
+
+select * from juelisv1andv2busientityhiermapinfo where locationname like 'BHUBANESHWAR%'
+
+select * from postransdatesettingsinfo where entityhierarchyid = 1431 order by transdatetime desc limit 10;
+update  boardrateinfo set transdate = '2025-01-02 00:00:00', wefdate = '2025-01-02 05:30:00' 
+where busientityhierinfoid = 1431 and transdate = '2025-01-01 00:00:00' and showroomrateyn = true;
+select * from boardrateinfo  where busientityhierinfoid = 1431 order by transdate desc limit 20;
+select * from cashopeningandclosingdetails where entityhierarchyid = 1431 order by transdate desc limit 10
+select * from posdayclose where entityhierarchyid = 1431  order by  transdate desc
+select * from posv2counterclosinginfo where posv2counterclosinginfo.pvcentityhierarchyid=1431
+
+--------------------------------------------------to change manager ph no----------------------------
+
+select * from juelisv1andv2busientityhiermapinfo where locationname like '%DILS%';--2625
+select * from entityparametermapinfo where parameterid=488 and entityhierarchyid='2625'
+
+---------------------------------------------------------proc for sync pending based on transropid and transno----------------------
+
+CALL abstractbillingstatusproc ('2024-11-24',15,'SYNC_PENDING_LIST','rs_results');
+FETCH ALL FROM "rs_results";
+----------------------------------------------------------------------SR validity extension-----------------------------------------------
+
+select * from juelisv1andv2busientityhiermapinfo where locationname like 'BHUB%';
+select * from businesslogicruleconfiginfo where ruleid = '966' and busientityhierarchyid = '1507'  -- value = 15
+
+------------------------for changing advance number (advno correction)-------------------------------------------------------------------
+
+SELECT * FROM transsettledinfo WHERE transno ='KMHGSOAN0337'
+SELECT * FROM transdtlserviceextendedinfo WHERE  dtlhdrtransid =  160300000009286102 
+SELECT * FROM  transdtlservice WHERE  dtlhdrtransid =  160300000009286102 
+select * from transhdr where hdrtransid=160300000009286102
+
+------------------------------crm reserved issue--------------------------------------------------------------------------------------
+
+SELECT * from customerspecificpromotiondtl where promovoucherno = 'ZAP82UM3ZTCT'
+SELECT * from customerspecificpromotionhdr where customerspecificid = '88337'
+SELECT * from transsettledinfo where transgroupid = '168540000022406102'
+
+-----------------------------------Gift Voucher-------------------------------------------------------------------------------------
+to change gv count-
+select * from entityparametermapinfo where parameterid=86----GV_MAXLIMIT
+
+select * from transdtlserviceextendedinfo join transstatusmapinfo  on dtlhdrtransid =servicedtlhdrtransid 
+and dtlhdrtransrowno = servicedtlhdrtransrowno and dtltransrowno = servicedtltransrowno
+where transdtlserviceextendedinfo.refno='KGJ7424931' and  status ='Redeemed' order by dtlhdrtransid , dtlhdrtransrowno
+
+SELECT * FROM transsettledinfo WHERE hdrtransid=137430000004242102
+
+------------------------------for billing rts---------------------------------------------------------------------------------------
+
+select * from personinfo where personcode = '58724'
+select * from userandrightsmapping where userid = 332871
+select max(alternatekey)+1 from userandrightsmapping
+
+-- insert into userandrightsmapping  select 4355 AS maxid, 332871 as personinfoid, 'BILL_SAVE_ACCESS'
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+SELECT * FROM muzcontrolcodes where  mccid=343
+SELECT * FROM optiondtl where code like 'GIFT_V%'
+SELECT * from transdtlproduct where simino='938' and dtlhdrtransid=167000000005818102
+SELECT * FROM optiondtl where OPTIONDTLID=577
+select * from juelisv1andv2busientityhiermapinfo where busientityhierid= 1642 
+select * from personinfo where personcode='S58013'
+select distinct dtlhdrtransid from transdtlservice where transrefno=''adavnaceno'
+
+-----------------------promotion----------------------------------------------------------------------------------------------------
+select * from promoconfighdr  where promoconfigcode ='KJOFF23' limit 10 --10157
+select * from promoconfigtypeparaminfodtl where promoconfigid=10157 
+
+
+SELECT * from goldschemeinfo where gsischemeno='61081651597862'  order by schemetransactionrowno DESC
+SELECT * from goldschemeinfo where gsirefadvanceno='RCHGSFC000479'
+
+select * from posstockidentitymodeinfo where simicode='102106061785';
+select * from promoproductskuconfig where promoproductconfigid=10011161079
+select * from promoproductskuconfig join promosegmentmst on promoproductskuconfig.promosegmentid=promosegmentmst.promosegmentid where promoproductconfigid=10011161079
+
+--------------------------------------hierarchy check on promotion-----------------------------------------
+
+select * from posstockidentitymodeinfo where simicode='129200008656' --copy product hierarchyid from this table and put into 2nd table
+
+select * from promoproductskuconfig join promosegmentmst on promoproductskuconfig.promosegmentid=promosegmentmst.promosegmentid where promoproductconfigid=102821359
+
+
+--------------------------------------------------sr item retured.-------------------------------------------------------------------
+SELECT * FROM public.transdtlproduct;
+	
+select * from stockavailabilityinfo  where simicode= '188101631093' 
+
+-----------------for adding new gst no------------------------------------------------------------------------------------------------
+
+select * from addnlinfo where addnlinfoallocid=28540
+
+----------------------------for cancelling scheme which is already cancelled with bill group id---------------------------------------
+
+select * from transhdr where transgroupid=104300000019255102 and optiondtlid=3732( here choose optiondtl id corresponding to the ticket like  SCHEME_REDEMPTION_ESTIMATE_GOLD gold ,dmd,silver)
+
+------------------------------------------to get barcodes ---------------------------------------------------------------------------
+
+select * from posstockidentitymodeinfo where posstockidentitymodeinfo.entityhierarchyid=1431 and posstockidentitymodeinfo.subentityhierarchyid=1011 limit 10
+
+--------------------stock--------------------------------------------------------------------------------------------------------------
+
+select * from stockavailabilityinfo where simicode='205300891441'
+select * from posstockidentitymodeinfo where simicode = '1284' and entityhierarchyid= 1494
+select * from juelisv1andv2busientityhiermapinfo where locationname like 'AD%';
+select * from stockavailabilityinfo  where simicode= '1284' and busientityhierarchyid= 1494
+
+
+=-----------------------------------------for static otp disable---------------------------------------------------------------------
+
+select * from juelisv1andv2busientityhiermapinfo where locationname like '%ADOO%';
+select * from entityparametermapinfo where parameterid = 47 and entityhierarchyid=2579
+select * from parametermst where paramid=47 limit 10
+select * from parametermst order by  paramid desc
+
+----------------------------------------advance no missing-------------------------------------------------------------------------------
+
+ SELECT * FROM personinfo where primarymobileno='8095943677'
+   select * from transgroupinfo where personinfoid='147550000003150102' order by transdate DESC
+   SELECT * FROM  transdtlservice WHERE  dtlhdrtransid =  148550000000832102 
+   SELECT * FROM transsettledinfo WHERE transgroupid  in (148550000000820102, 148550000000821102,148550000000832102)
+
+---------------otp generation ------------------------------------------------------------------------------------------------------
+
+SELECT transgroupid, transgrouprowno, otphdrrowno, otpdtlrowno, paramcode, mobileno, otp, otpgeneratedtime, otpexpirytime, count
+	FROM public.otpdtl where mobileno='8902521688' order by otpgeneratedtime desc ;
+
+------------GV--------------------------------------------------------------------------------------------------------------------
+
+SELECT gvsourcecompanyrefid, gvsourcecompanyrefkey, gvsourcecompanyname, giftvouchertype, giftvochersubtype, desc1, desc2, wefdate, otprequiredyn, pinrequiredyn
+	FROM public.gvsourcecompanyinfo;
+
+
+SELECT dtlhdrtransid, dtlhdrtransrowno, dtltransrowno, transdtlextendrowno, ratefixtypemccid, orderamt, insurancecompanyinfoid, insurancecompanyinforowno, insurancerenewalyn, metaltypemccid,
+puritysegmentid, purityrate, netwt, refundamt, categorymccid, gvsourcetypemccid, gvid, schemetransactionid, refno, dtlrefdate, duedate, validitydays, transsubtype, policies, dtlrefinfo,
+gvsourcecompanyrefid, gvsourcecompanyrefkey, customername, primarymobileno, balanceamt, otprequiredyn, attachmentamt, loyaltycardtotalpoints, loyaltycardcurrredpoints, sourcetypemccid,
+balanceorderamt, balancenetwt
+FROM public.transdtlserviceextendedinfo where gvsourcecompanyrefid=506;
+
+-------------------------------------------------------------------------------------------------------------------------------------
+SELECT * FROM transsettledinfo where optiondtlid=3757
+SELECT * FROM transsettledinfo WHERE hdrtransid=137430000004242102
+SELECT * FROM transdtlserviceextendedinfo WHERE  dtlhdrtransid =  140020000001185102 
+SELECT * FROM  transdtlservice WHERE  dtlhdrtransid =  137430000004242102 
+select * from transhdr where hdrtransid=137430000004242102
+
+---------------------------------to change customer address-------------------------------------------------------------------------
+
+SELECT * FROM transsettledinfo WHERE transno ='KNRGSSV00944'
+SELECT * FROM transcontactinfo where transgroupid=127150000006344102
+select * from contactaddressinfo where personcontactinforefid= 127150000006347102
+select * from addressinfo where addressid=155440000012063102
+select * from addressmst where admaddressid=127150000006346102
+select * from areainfo where areaid=10011164147
+
+
+---------------------------------to change employee code------------------------------------------------------------------------------
+
+SELECT * FROM transsettledinfo WHERE transno ='STKGSOAN0847'
+select * from transgroupinfo where transgroupid='129470000064706102'
+select * from transhdr where hdrtransid=129470000064706102
+select * from personinfo where personcode='41339'
+
+
+------------------------------to find area or address----------------------------------------------------------------------------------
+
+SELECT * FROM transsettledinfo WHERE transno ='JPRGSSV00995'
+SELECT * FROM transcontactinfo where transgroupid=155440000012062102
+select * from personinfo where personinfoid=    131880000001698102
+select * from contactaddressinfo where personcontactinforefid= 155440000012064102
+select * from addressinfo where addressid=155440000012063102
+SELECT * from addressinfo where primarymobileno='9838979738'  order by wefdate DESC
+select * from areainfo where areaid=244833
+SELECT * FROM public.businessentityhiertransrefinfo  where locationname like 'RANCHI%'
+
+------------------------------SR location mismatch-----------------------------------------------------------------------------------
+
+SELECT * FROM transsettledinfo WHERE transno ='104300000022322102'
+SELECT * FROM transdtlserviceextendedinfo WHERE  dtlhdrtransid =  104300000019255102 
+SELECT * FROM  transdtlservice WHERE  dtlhdrtransid =  104300000019255102 
+select * from transhdr where hdrtransid=104300000019255102
+select * from transgroupinfo  where transno='USMGSSW00141'
+
+select * from juelisv1andv2busientityhiermapinfo where busientityhierid= 1680 
+select * from transdtlproduct where simino='186100772773'
+SELECT * FROM transsettledinfo WHERE hdrtransid ='104300000021999102'
+
+
+SELECT * from addressinfo where primarymobileno='9952016608'  order by wefdate DESC
+limit 10
+
+
+   SELECT * FROM personinfo where primarymobileno='9952016608'
+	
+	select * from transgroupinfo where personinfoid='100112608796' order by transdate DESC
+	select * from transgroupinfo where personinfoid='1917197384'
+	select * from transcontactinfo where transcontactinfoid=104300000022322102
+	select * from contactaddressinfo where personcontactinforefid=104300000022324102
+	select * from  addressinfo where addressid=104300000022323102
+	
+	
+	select * from transcontactinfo where transgroupid=104300000021999102
+	select * from contactaddressinfo where personcontactinforefid=142670000000133102
+	select * from  addressinfo where addressid=142670000000132102
+--------------------------------- print-----------------------------------------------------------------------------------------------
+
+select * from juelisv1andv2busientityhiermapinfo where locationname like 'CHR%';
+select * from addnlinfoalloc where parameterid=13 and businessentityhierid=1516  
+select * from addnlinfo where addnlinfoallocid=14782
+select * from addnlinfo where personinfoid=1959170655
+-----------------------------PAN-----------------------------------------------------------------------------------------------------
+
+select * from juelisv1andv2busientityhiermapinfo where locationname like 'ADOO%';
+select * from parametermst where paramcode like'PAN%'
+select * from addnlinfoalloc where parameterid in(16,29) and businessentityhierid=1494  
+select * from addnlinfolog where transgroupid=102930000026996102  
+select * from addnlinfo where transgroupid=102930000026996102  
+and addnlinfoallocid=13743  IJYPK5330Q
+and addnlinfoallocid=13749 AJI KUMAR KARUNAKARAN
+select * from addnlinfolog where personinfoid=1959170655
+
+---------------------------------------MY kalyan employee code add---------------------------------------------------------------------
+
+SELECT * FROM transsettledinfo WHERE transno ='BHUGSOAN2038'
+select * from transgroupinfo where transgroupid='130490000074254102'
+select * from juelisv1andv2busientityhiermapinfo where locationname like 'BHUBANE%';
+select * from parametermst where paramcode like'MYK%'
+select * from addnlinfoalloc where parameterid in(63) and businessentityhierid=1507
+select * from addnlinfoalloc where parameterid in(63,64) and businessentityhierid=1507--code 63 name 64
+select * from addnlinfolog where transgroupid=130490000074254102  
+select * from addnlinfo where transgroupid=130490000074254102  
+select * from addnlinfolog where personinfoid=111330000061017102
+------------------------------------------------------------------------  User Sync Dplication correction Live -Densy script-------------------------------------------------------------
+
+select personinfoid, persontypeid, parentledgerhierid 
+from juelisv1andv2mastermapinfo
+group by personinfoid, persontypeid, parentledgerhierid 
+having count(*) > 1 --- we get duplicated rows while executin this query
+after we need to back up the table 
+
+select * into juelisv1andv2mastermapinfobkp_20251203 
+from juelisv1andv2mastermapinfo  
+group by personinfoid, persontypeid, parentledgerhierid 
+having count(*) > 1
+
+--on v2----
+select * from personinfo where personinfoid=    102538437--S76635
+ select * from juelisv1andv2mastermapinfo where  personinfoid=    102538437--delt extre rows for this iD ,confirm that 
+ select * from persontypemst  limit 10
+
+on v1
+salesexectivemst
+----------------------------for watch dial testing ---------------to del  from settled  and remove out row from stockavailability----------------
+ SELECT * FROM transsettledinfo where transno = 'TCRGUSV15420'
+ select * from posstockidentitymodeinfo where posstockidentitymodeinfo.prodscreendesc ilike  '%DIAl%' limit 10
+ and entityhierarchyid=1431 and subentityhierarchyid=1011 limit 10
+    select * from stockavailabilityinfo where  simicode ='763100000002' order by simiid desc  limit 10
+	 select * from InstrumentDetailsInfo where transgroupid= 100030000015868102 limit 10--100030000015868102
+	 select * from  possetoffdtl where setoffid= 100030000015868102 limit 10
+	  select * from transactionstatus where transid=100030000015868102 limit 10	  
+------------------------------------------------------------------------------------------BEGIN tranand roll back----------------------------
+BEGIN;
+
+ALTER TABLE public.posstockidentitymodeinfo
+ADD COLUMN IF NOT EXISTS groupid BIGINT;
+
+ALTER TABLE public.posstockidentitymodeinfo
+ADD COLUMN IF NOT EXISTS groupname VARCHAR(100);
+
+-- If everything is correct
+COMMIT;
+
+-- If something goes wrong
+-- ROLLBACK;
+
+
+
+ 

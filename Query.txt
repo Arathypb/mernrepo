@@ -1,0 +1,130 @@
+-- Gold
+ SELECT areainfo.statename,busientityhierinfodnz.locationname,
+        CAST (transgroupinfo.transdate as DATE) as Date,
+                to_char (CAST (now() AT TIME ZONE 'Asia/Kolkata' as TIME),'HH24:MI') as Time,
+        sum(transdtlproduct.grossweight) AS        GoldGrossWt,
+        sum(transdtlproduct.netamt) - sum(transdtlproduct.taxamt) AS        GoldTurnOver,
+        count(distinct transgroupinfo.transgroupid) AS GoldTurnOverCount        
+        from transsettledinfo
+        join transgroupinfo
+        on transgroupinfo.transgroupid = transsettledinfo.transgroupid
+        and transgroupinfo.transgrouprowno = transsettledinfo.transgrouprowno
+        join transhdr
+        on transsettledinfo.hdrtransid = transhdr.hdrtransid
+        and transsettledinfo.hdrtransrowno = transhdr.hdrtransrowno
+            join transdtlproduct
+        on transhdr.hdrtransid = transdtlproduct.dtlhdrtransid
+        and transhdr.hdrtransrowno = transdtlproduct.dtlhdrtransrowno        
+        join busientityhierinfodnz
+        on transgroupinfo.businessentityhierid = busientityhierinfodnz.busientityhierid
+		join businessentityhiertransrefinfo 
+	    on	businessentityhiertransrefinfo.locationhierid =	busientityhierinfodnz.busientityhierid   
+        join	areainfo 
+	    on areainfo.areaid = businessentityhiertransrefinfo.locationareaid
+        where transgroupinfo.businesssubentityhierid=1011
+        and transgroupinfo.transdate ='2023-11-11 00:00:00'
+        and transsettledinfo.optiondtlid in (94,964,1126)
+        GROUP BY      areainfo.statename,
+		busientityhierinfodnz.locationname,
+        transgroupinfo.transdate
+        ORDER BY areainfo.statename,
+		busientityhierinfodnz.locationname;
+
+ --Diamond count
+	   SELECT areainfo.statename,busientityhierinfodnz.locationname,
+        CAST (transgroupinfo.transdate as DATE) as Date,
+        to_char (CAST (now() AT TIME ZONE 'Asia/Kolkata' as TIME),'HH24:MI') as Time,
+        count(distinct transgroupinfo.transgroupid) AS DiamondTurnOverCount        
+        from transsettledinfo
+        join transgroupinfo
+        on transgroupinfo.transgroupid = transsettledinfo.transgroupid
+        and transgroupinfo.transgrouprowno = transsettledinfo.transgrouprowno
+        join transhdr
+        on transsettledinfo.hdrtransid = transhdr.hdrtransid
+        and transsettledinfo.hdrtransrowno = transhdr.hdrtransrowno
+        join transdtlproduct
+        on transhdr.hdrtransid = transdtlproduct.dtlhdrtransid
+        and transhdr.hdrtransrowno = transdtlproduct.dtlhdrtransrowno        
+        join busientityhierinfodnz
+        on transgroupinfo.businessentityhierid = busientityhierinfodnz.busientityhierid
+		join businessentityhiertransrefinfo 
+	    on	businessentityhiertransrefinfo.locationhierid =	busientityhierinfodnz.busientityhierid   
+        join	areainfo 
+	    on areainfo.areaid = businessentityhiertransrefinfo.locationareaid
+        where transgroupinfo.businesssubentityhierid=1012
+        and transgroupinfo.transdate ='2023-11-11 00:00:00'
+        and transsettledinfo.optiondtlid in (94,964,1126)
+        GROUP BY      areainfo.statename,
+		busientityhierinfodnz.locationname,
+        transgroupinfo.transdate
+        ORDER BY busientityhierinfodnz.locationname;
+
+--  Diamond
+         SELECT areainfo.statename,busientityhierinfodnz.locationname,
+        CAST (transgroupinfo.transdate as DATE) as Date,
+                to_char (CAST (now() AT TIME ZONE 'Asia/Kolkata' as TIME),'HH24:MI') as Time,
+            SPLIT_PART(transdtlproduct.prodscreendesc,'-',1) AS Group,
+        sum(transdtlproduct.dmdct) AS        DiamondCarat,
+        sum(transdtlproduct.netdmdvalue) AS        DiamondValue,
+        sum(transdtlproduct.cstct) AS        ColourStoneCarat,
+        sum(transdtlproduct.netcstvalue) AS        ColourStoneValue,
+                sum(transdtlproduct.netwt) AS        NetWt,
+                sum(transdtlproduct.grossweight) AS        GrossWt,
+                sum(transdtlproduct.netamt) - sum(transdtlproduct.taxamt) AS        DiamondTurnOver,
+        count(distinct transgroupinfo.transgroupid) AS DiamondTurnOverCount        
+        from transsettledinfo
+        join transgroupinfo
+        on transgroupinfo.transgroupid = transsettledinfo.transgroupid
+        and transgroupinfo.transgrouprowno = transsettledinfo.transgrouprowno
+        join transhdr
+        on transsettledinfo.hdrtransid = transhdr.hdrtransid
+        and transsettledinfo.hdrtransrowno = transhdr.hdrtransrowno
+            join transdtlproduct
+        on transhdr.hdrtransid = transdtlproduct.dtlhdrtransid
+        and transhdr.hdrtransrowno = transdtlproduct.dtlhdrtransrowno        
+        join busientityhierinfodnz
+        on transgroupinfo.businessentityhierid = busientityhierinfodnz.busientityhierid
+		join businessentityhiertransrefinfo 
+	    on	businessentityhiertransrefinfo.locationhierid =	busientityhierinfodnz.busientityhierid   
+        join	areainfo 
+	    on areainfo.areaid = businessentityhiertransrefinfo.locationareaid
+        where transgroupinfo.businesssubentityhierid=1012
+        and transgroupinfo.transdate ='2023-11-11 00:00:00'
+        and transsettledinfo.optiondtlid in (94,964,1126)
+        GROUP BY      areainfo.statename,
+		busientityhierinfodnz.locationname,
+        transgroupinfo.transdate,
+        SPLIT_PART(transdtlproduct.prodscreendesc,'-',1)
+         ORDER BY areainfo.statename,
+		busientityhierinfodnz.locationname;
+
+--  Silver
+        SELECT areainfo.statename,busientityhierinfodnz.locationname,
+        CAST (transgroupinfo.transdate as DATE) as Date,
+                to_char (CAST (now() AT TIME ZONE 'Asia/Kolkata' as TIME),'HH24:MI') as Time,
+        sum(transdtlproduct.grossweight) AS        SilverGrossWt,
+        sum(transdtlproduct.netamt) - sum(transdtlproduct.taxamt) AS        SilverTurnOver,
+        count(distinct transgroupinfo.transgroupid) AS SilverTurnOverCount        
+        from transsettledinfo
+        join transgroupinfo
+        on transgroupinfo.transgroupid = transsettledinfo.transgroupid
+        and transgroupinfo.transgrouprowno = transsettledinfo.transgrouprowno
+        join transhdr
+        on transsettledinfo.hdrtransid = transhdr.hdrtransid
+        and transsettledinfo.hdrtransrowno = transhdr.hdrtransrowno
+            join transdtlproduct
+        on transhdr.hdrtransid = transdtlproduct.dtlhdrtransid
+        and transhdr.hdrtransrowno = transdtlproduct.dtlhdrtransrowno        
+        join busientityhierinfodnz
+        on transgroupinfo.businessentityhierid = busientityhierinfodnz.busientityhierid
+		join businessentityhiertransrefinfo 
+	    on	businessentityhiertransrefinfo.locationhierid =	busientityhierinfodnz.busientityhierid   
+        join	areainfo 
+	    on areainfo.areaid = businessentityhiertransrefinfo.locationareaid
+        where transgroupinfo.businesssubentityhierid=1013
+        and transgroupinfo.transdate ='2023-11-11 00:00:00'
+        and transsettledinfo.optiondtlid in (94,964,1126)
+        GROUP BY      areainfo.statename,
+		busientityhierinfodnz.locationname,
+        transgroupinfo.transdate
+        ORDER BY busientityhierinfodnz.locationname;
